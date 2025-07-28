@@ -38,15 +38,5 @@ Run the Container: Execute the following command to run the script. It will auto
 docker run --rm -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" --network none pdf-extractor:1.0
 (Note for Windows users: In Command Prompt, replace $(pwd) with %cd%. In PowerShell, use ${pwd}.)
 
-Project Structure
-
-.
-├── Dockerfile          # Defines the container for our application.
-├── main.py             # The core Python script with all the extraction logic.
-├── requirements.txt    # Lists the necessary Python libraries (PyMuPDF).
-├── input/              # Folder to place input PDF files.
-└── output/             # Folder where the generated JSON files are saved.
-
-Libraries Used
 
 PyMuPDF (fitz): A powerful and high-performance Python library for accessing PDF content, including text, fonts, and metadata.
